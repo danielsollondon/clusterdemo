@@ -1,0 +1,11 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: azure-arc-sample
+  namespace: arc-k8s-demo
+spec:
+  releaseName: capi01
+  chart:
+    git: https://github.com/danielsollondon/clusterdemo
+    ref: main
+    path: charts/clusterConfig
