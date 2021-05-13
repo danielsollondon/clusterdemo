@@ -98,13 +98,11 @@ spec:
         kubeletExtraArgs:
           cloud-config: /etc/kubernetes/azure.json
           cloud-provider: azure
-        name: .values.devCluAzCP.name
     joinConfiguration:
       nodeRegistration:
         kubeletExtraArgs:
           cloud-config: /etc/kubernetes/azure.json
           cloud-provider: azure
-        name: .values.devCluAzCP.name
     mounts:
     - - LABEL=etcd_disk
       - /var/lib/etcddisk
@@ -195,5 +193,4 @@ spec:
           kubeletExtraArgs:
             cloud-config: /etc/kubernetes/azure.json
             cloud-provider: azure
-          name: .values.devCluAzCP.name
       useExperimentalRetryJoin: true
