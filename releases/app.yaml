@@ -2,7 +2,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: azure-arc-sample
-  namespace: cluster-config-builder
+  namespace: default
 spec:
   releaseName: capi01
   chart:
