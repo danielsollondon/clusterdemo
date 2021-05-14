@@ -138,7 +138,7 @@ metadata:
   namespace: default
 spec:
   clusterName: my-cluster
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels: null
   template:
